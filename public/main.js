@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lwc_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"customWire\", function() { return customWire; });\n/* harmony import */ var _lwc_wire_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lwc/wire-service */ \"./node_modules/@lwc/wire-service/dist/modules/es2017/wire.js\");\n\n\nconst customWire = () => {}\n\nObject(_lwc_wire_service__WEBPACK_IMPORTED_MODULE_0__[\"register\"])(customWire, (eventTarget) => {\n  eventTarget.addEventListener('config', (config) => {\n    console.log('config from LWC component', config);\n  })\n});\n\n//# sourceURL=webpack:///./src/wire/wire.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"customWire\", function() { return customWire; });\n/* harmony import */ var _lwc_wire_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lwc/wire-service */ \"./node_modules/@lwc/wire-service/dist/modules/es2017/wire.js\");\n\n\nconst customWire = () => {}\n\nObject(_lwc_wire_service__WEBPACK_IMPORTED_MODULE_0__[\"register\"])(customWire, (eventTarget) => {\n  eventTarget.addEventListener('config', (config) => {\n    console.log('config from LWC component', config);\n  })\n  \n  eventTarget.addEventListener('disconnect', (config) => {\n    console.log('component disconnected');\n  })\n});\n\n//# sourceURL=webpack:///./src/wire/wire.js?");
 
 /***/ })
 
