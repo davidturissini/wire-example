@@ -1,0 +1,36 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "my-glitch-app",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "server.js",
+  "scripts": {
+    "start": "rimraf ./public && webpack && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "@lwc/engine": "^0.33.25",
+    "webpack-cli": "^3.3.2",
+    "@lwc/wire-service": "^0.33.25"
+  },
+  "devDependencies": {
+    "webpack": "4.35.0",
+    "webpack-dev-server": "*",
+    "rimraf": "^2.6.1",
+    "lwc-webpack-plugin": "^0.2.0"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/#!/project/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
