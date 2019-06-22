@@ -9,5 +9,11 @@ register(customWire, (eventTarget) => {
   
   eventTarget.addEventListener('disconnect', (config) => {
     console.log('component disconnected');
+    
+    const result = {
+      hello: 'world',
+    };
+    const event = new ValueChangedEvent({ data: result });
+    eventTarget.dispatchEvent(event);
   })
 });
